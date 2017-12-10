@@ -1,0 +1,67 @@
+<div class="home-container">
+  <div>
+
+    <div class="header row">
+      <div class="col-sm-6 user">
+      <img class="avatar pull-left" src="./assets/avatar.jpg"/>
+        <div class="col-sm-6">
+      <h2 class="">{{loggedUser}}</h2>
+        </div>
+      </div>
+      <div class="col-sm-4 pull-right">
+        <img src="./assets/Combined Shape.svg" class="pull-right"/>
+      </div>
+    </div>
+    <div class="content">
+<<<<<<< HEAD
+      <div class="column">column 1</div>
+      <div class="column">column 2</div>
+      <div class="column">
+        <div class="col-header"></div>
+        <app-users-list [users]="users$ | async"
+                    (selected)="selectUser($event)"
+                    (deleted)="deleteUser($event)">
+    </app-users-list>
+=======
+      <div class="column">
+        <div class="col-header">My Last Defects</div>
+        <div class="col-list"></div>
+      </div>
+      <div class="column">
+        <div class="col-header">Hottest Defects</div>
+        <div class="col-list"></div>
+      </div>
+      <div class="column">
+        <div class="col-header">Top Solvers</div>
+        <div class="col-list"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot-btn">
+        <label class="lbl-btn">View My Defects</label>
+>>>>>>> def401a0807f18519de74f425de858b19fd8cb46
+      </div>
+    </div>
+    <!--<div class="mdl-card__supporting-text">-->
+      <!--<div class="mdl-grid">-->
+        <!--<div class="mdl-cell&#45;&#45;6-col sub-list">-->
+          <!--<h5>Items</h5>-->
+          <!--<ul>-->
+            <!--<li *ngFor="let item of userData.items">-->
+              <!--<strong>{{item.name}}</strong> – {{item.description}}-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="mdl-cell&#45;&#45;6-col sub-list">-->
+          <!--<h5>Widgets</h5>-->
+          <!--<ul>-->
+            <!--<li *ngFor="let widget of userData.widgets">-->
+              <!--<strong>{{widget.name}}</strong> – {{widget.description}}-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+
+</div>

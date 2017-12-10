@@ -1,20 +1,26 @@
-import { Component } from '@angular/core';
+import { Component,OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { HomeService, UserData } from '../shared';
 import { Observable } from 'rxjs/Observable';
+import { UsersService, User } from '../shared';
 import 'rxjs/add/observable/combineLatest';
-import {User} from "../shared/user.model";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   // userData: Observable<UserData[]> = this.homeService.data$;
-  userData: Observable<UserData[]> = this.homeService.data$;
-  loggedUser: Observable<User> = this.homeService.loggedUser$;
+   users$: Observable<User[]>;
+  //loggedUser: Observable<User> = this.homeService.loggedUser$;
 
-  constructor(private homeService: HomeService) {
-    console.log(this.userData);
+  constructor(private usersService: UsersService) {
+    // console.log(this.userData);
+  }
+
+  ngOnInit() {
+   this.users$ = this.usersService.users$;
+    this.usersService.loadUsers();
+    console.log(this.users$);
   }
 }
