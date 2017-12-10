@@ -1,7 +1,44 @@
 .home-container {
-    //margin: 20px;
-    .item-card {
-        margin-bottom: 10px;
+
+.item-card {
+  margin-bottom: 10px;
+}
+
+.avatar {
+  border-radius: 1000px;
+  height: 100px;
+  width: 100px;
+  background: none;
+  border: none;
+  background-color: transparent;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+  .user-name {
+    margin-top: 60px;
+    font-size: 30px;
+  }
+
+  .points-display {
+    margin-right: 20px;
+
+    .points {
+      height: 145px;
+      width: 95px;
+      padding-left: 10px;
+
+      span {
+        color: white;
+        font-size: 65px;
+        vertical-align: middle;
+      }
+
+      .my-points {
+        font-size: 15px;
+        padding-left: 3px;
+      }
+
+      background-image: url("../../assets/Combined_Shape.svg");
     }
     .avatar {
         border-radius: 1000px;
