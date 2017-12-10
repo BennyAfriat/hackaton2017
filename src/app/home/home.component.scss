@@ -1,6 +1,6 @@
 .home-container {
 
-margin: 20px;
+//margin: 20px;
 
 .item-card {
   margin-bottom: 10px;
@@ -13,8 +13,34 @@ margin: 20px;
   background: none;
   border: none;
   background-color: transparent;
-  margin: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
 }
+  .user-name {
+    margin-top: 60px;
+    font-size: 30px;
+  }
+
+  .points-display {
+    margin-right: 20px;
+
+    .points {
+      height: 145px;
+      width: 95px;
+
+      span {
+        color: white;
+        font-size: 65px;
+        vertical-align: middle;
+      }
+
+      .my-points {
+        font-size: 15px;
+      }
+
+      background-image: url("../../assets/Combined_Shape.svg");
+    }
+  }
 
 h5 {
   margin: 0;
@@ -25,11 +51,12 @@ h5 {
 }
 
   .header{
-    height: 170px;
+    height: 200px;
   }
   .content{
     display: flex;
     height: 318px;
+    margin: 20px;
   }
 
   .column{
