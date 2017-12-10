@@ -34,10 +34,30 @@ h5 {
 
   .column{
     flex-grow: 1;
+    .col-header{
+      height: 27px;
+      width: 100%;
+      color: #24C0D7;
+      font-size: 20px;
+      line-height: 27px;
+    }
   }
 
   .footer{
     height: 80px;
+    .foot-btn{
+      height: 43px;
+      width: 170px;
+      border-radius: 47px;
+      background: linear-gradient(180deg, #82DBEF 0%, #21CADF 100%);
+      float: right;
+    }
+    .lbl-btn{
+      color: white;
+      line-height: 40px;
+      padding-left: 26px;
+    }
+
   }
 
 }

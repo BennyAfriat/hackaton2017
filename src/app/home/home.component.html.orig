@@ -13,6 +13,16 @@
       </div>
     </div>
     <div class="content">
+<<<<<<< HEAD
+      <div class="column">column 1</div>
+      <div class="column">column 2</div>
+      <div class="column">
+        <div class="col-header"></div>
+        <app-users-list [users]="users$ | async"
+                    (selected)="selectUser($event)"
+                    (deleted)="deleteUser($event)">
+    </app-users-list>
+=======
       <div class="column">
         <div class="col-header">My Last Defects</div>
         <div class="col-list"></div>
@@ -29,6 +39,7 @@
     <div class="footer">
       <div class="foot-btn">
         <label class="lbl-btn">View My Defects</label>
+>>>>>>> def401a0807f18519de74f425de858b19fd8cb46
       </div>
     </div>
     <!--<div class="mdl-card__supporting-text">-->
