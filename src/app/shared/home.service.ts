@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ItemsService } from './items.service';
+import { DefectsService } from './defects.service';
 import { WidgetsService } from './widgets.service';
 import { UsersService } from './users.service';
 import { Item } from './item.model';
@@ -16,7 +17,7 @@ export interface UserData {
 
 @Injectable()
 export class HomeService {
-  defects$: Observable<Item[]> = this.itemsService.items$;
+  defects$: Observable<Defect[]> = this.defectsService.defects$;
   users$: Observable<User[]> = this.usersService.users$;
   widgets$: Observable<Widget[]> = this.widgetsService.widgets$;
   data$: Observable<UserData[]> = Observable.combineLatest(
@@ -34,10 +35,12 @@ export class HomeService {
   constructor(
     private usersService: UsersService,
     private itemsService: ItemsService,
+    private defectsService: DefectsService,
     private widgetsService: WidgetsService
   ) {
     this.usersService.loadUsers();
     this.itemsService.loadItems();
+    this.defectsService.loadDefects();
     this.widgetsService.loadWidgets();
   }
 
