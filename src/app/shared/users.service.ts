@@ -33,7 +33,7 @@ export class UsersService {
   }
 
   saveUser(user: User) {
-    return (user.id) ? this.updateUser(user) : this.createUser(user);
+    return (user.employeeId) ? this.updateUser(user) : this.createUser(user);
   }
 
   createUser(user: User) {
@@ -44,12 +44,12 @@ export class UsersService {
   }
 
   updateUser(user: User) {
-    return this.http.put(`${BASE_URL}${user.id}`, JSON.stringify(user), HEADER)
+    return this.http.put(`${BASE_URL}${user.employeeId}`, JSON.stringify(user), HEADER)
       .subscribe(action => this.store.dispatch({ type: UPDATE_USER, payload: user }));
   }
 
   deleteUser(user: User) {
-    return this.http.delete(`${BASE_URL}${user.id}`)
+    return this.http.delete(`${BASE_URL}${user.employeeId}`)
       .subscribe(action => this.store.dispatch({ type: DELETE_USER, payload: user }));
   }
 }
