@@ -15,6 +15,7 @@ export interface UserData {
 
 @Injectable()
 export class HomeService {
+  loggedUser$: Observable<User> = this.usersService.user$;
   defects$: Observable<Defect[]> = this.defectsService.defects$;
   users$: Observable<User[]> = this.usersService.users$;
   widgets$: Observable<Widget[]> = this.widgetsService.widgets$;
@@ -28,6 +29,7 @@ export class HomeService {
         });
       });
   });
+
 
   constructor(
     private usersService: UsersService,

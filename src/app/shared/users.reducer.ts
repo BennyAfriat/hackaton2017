@@ -6,13 +6,17 @@ export const ADD_USERS = 'ADD_USERS';
 export const CREATE_USER = 'CREATE_USER';
 export const UPDATE_USER = 'UPDATE_USER';
 export const DELETE_USER = 'DELETE_USER';
+export const GET_LOGGED_USER = 'GET_LOGGED_USER';
 
 const comparator = 'id';
 
 export function users (state: User[] = [], action: Action) {
   switch (action.type) {
-    case ADD_USERS:
+    case ADD_USERS: {
+
+      console.log(action.payload);
       return action.payload;
+    };
 
     case CREATE_USER:
       return [...state, action.payload];
