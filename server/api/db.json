@@ -1,5 +1,36 @@
 {
 
+  "defects": [
+    {
+      "id": 2,
+      "severity": "critical",
+      "description": "This is a description edited",
+      "award": "Cofee",
+      "assignedId": 1,
+      "solvingId": 1,
+      "ETA": "01/01/2018"
+    },
+    {
+      "id": 3,
+      "severity": "high",
+      "description": "This is a description edited",
+      "award": "Lunch",
+      "assignedId": 1,
+      "solvingId": 2,
+      "ETA": "01/01/2018"
+    },
+    {
+      "id": 4,
+      "severity": "critical",
+      "description": "This is a description edited",
+      "award": "Massage",
+      "assignedId": 1,
+      "solvingId": 3,
+      "ETA": "01/01/2018"
+    }
+  ],
+
+
     "items": [{
         "id": 1,
         "name": "Item 1",
@@ -63,3 +94,4 @@
         "user": 2
     }]
 }
+

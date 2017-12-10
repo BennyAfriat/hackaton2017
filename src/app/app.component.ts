@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Defects Social Network';
+
+  title = 'Buger';
+
   links = {
     items: ['/items'],
     widgets: ['/widgets'],

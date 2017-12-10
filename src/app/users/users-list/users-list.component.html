@@ -5,6 +5,7 @@
   </div>
   <div class="mdl-card__supporting-text">
     {{user.bio}}
+
   </div>
   <div class="mdl-card__menu">
     <button (click)="deleted.emit(user); $event.stopPropagation();"
