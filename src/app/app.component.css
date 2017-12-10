@@ -34,20 +34,22 @@
     min-width: 738px;
     min-height: 608px;
 }
-.header{
-  height: 170px;
-}
-.content{
-  display: flex;
-  height: 358px;
+
+.header {
+    height: 170px;
 }
 
-.column{
-  flex-grow: 1;
+.content {
+    display: flex;
+    height: 358px;
 }
 
-.footer{
-  height: 80px;
+.column {
+    flex-grow: 1;
+}
+
+.footer {
+    height: 80px;
 }
 
 .actions-wrapper {
@@ -58,4 +60,15 @@
     position: absolute;
     top: 36px;
     left: -110px;
+}
+
+.actions-wrapper ul {
+    position: absolute;
+    z-index: 2;
+    padding: 0px 0 0 33px;
+}
+
+.actions-wrapper ul li {
+    margin: 51px 0 140px 0;
+    cursor: pointer;
 }
