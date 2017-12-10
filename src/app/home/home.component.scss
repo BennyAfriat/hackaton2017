@@ -27,6 +27,7 @@
     .points {
       height: 145px;
       width: 95px;
+      padding-left: 10px;
 
       span {
         color: white;
@@ -36,6 +37,7 @@
 
       .my-points {
         font-size: 15px;
+        padding-left: 3px;
       }
 
       background-image: url("../../assets/Combined_Shape.svg");
