@@ -1,34 +1,30 @@
 {
 
-  "defects": [
-    {
-      "id": 2,
-      "severity": "critical",
-      "description": "This is a description edited",
-      "award": "Cofee",
-      "assignedId": 1,
-      "solvingId": 1,
-      "ETA": "01/01/2018"
-    },
-    {
-      "id": 3,
-      "severity": "high",
-      "description": "This is a description edited",
-      "award": "Lunch",
-      "assignedId": 1,
-      "solvingId": 2,
-      "ETA": "01/01/2018"
-    },
-    {
-      "id": 4,
-      "severity": "critical",
-      "description": "This is a description edited",
-      "award": "Massage",
-      "assignedId": 1,
-      "solvingId": 3,
-      "ETA": "01/01/2018"
-    }
-  ],
+    "defects": [{
+        "id": 2,
+        "severity": "critical",
+        "description": "This is a description edited",
+        "award": "Cofee",
+        "assignedId": 1,
+        "solvingId": 1,
+        "ETA": "01/01/2018"
+    }, {
+        "id": 3,
+        "severity": "high",
+        "description": "This is a description edited",
+        "award": "Lunch",
+        "assignedId": 1,
+        "solvingId": 2,
+        "ETA": "01/01/2018"
+    }, {
+        "id": 4,
+        "severity": "critical",
+        "description": "This is a description edited",
+        "award": "Massage",
+        "assignedId": 1,
+        "solvingId": 3,
+        "ETA": "01/01/2018"
+    }],
 
 
     "items": [{
@@ -76,6 +72,90 @@
             "userName": "mayankk",
             "password": "Mayank12"
         }
+    }, {
+        "firstName": "Ben-el",
+        "lastName": "Tavori",
+        "employeeId": 11254654,
+        "qcProject": "TMO dev",
+        "qcDomain": "TMO",
+        "imgLink": "",
+        "rank": 15,
+        "credentials": {
+            "userName": "benelt",
+            "password": "Benel12"
+        }
+    }, {
+        "firstName": "Leonard",
+        "lastName": "Cohen",
+        "employeeId": 11254875,
+        "qcProject": "TMO dev",
+        "qcDomain": "TMO",
+        "imgLink": "",
+        "rank": 45,
+        "credentials": {
+            "userName": "leonardc",
+            "password": "Leonard12"
+        }
+    }, {
+        "firstName": "Shimhon",
+        "lastName": "Peres",
+        "employeeId": 11211548,
+        "qcProject": "TMO dev",
+        "qcDomain": "TMO",
+        "imgLink": "",
+        "rank": 50,
+        "credentials": {
+            "userName": "shimhonp",
+            "password": "Shimhon12"
+        }
+    }, {
+        "firstName": "Eli",
+        "lastName": "Gelman",
+        "employeeId": 11111111,
+        "qcProject": "TMO dev",
+        "qcDomain": "TMO",
+        "imgLink": "",
+        "rank": 95,
+        "credentials": {
+            "userName": "elig",
+            "password": "Eli12"
+        }
+    }, {
+        "firstName": "Armin",
+        "lastName": "Van Burin",
+        "employeeId": 11321545,
+        "qcProject": "TMO dev",
+        "qcDomain": "TMO",
+        "imgLink": "",
+        "rank": 35,
+        "credentials": {
+            "userName": "arminv",
+            "password": "Armin12"
+        }
+    }, {
+        "firstName": "Leonel",
+        "lastName": "Messi",
+        "employeeId": 10101010,
+        "qcProject": "TMO dev",
+        "qcDomain": "TMO",
+        "imgLink": "",
+        "rank": 84,
+        "credentials": {
+            "userName": "leonelm",
+            "password": "Leonel12"
+        }
+    }, {
+        "firstName": "Pablo",
+        "lastName": "Escobar",
+        "employeeId": 15624875,
+        "qcProject": "TMO dev",
+        "qcDomain": "TMO",
+        "imgLink": "",
+        "rank": 37,
+        "credentials": {
+            "userName": "pabloe",
+            "password": "Pablo12"
+        }
     }],
     "widgets": [{
         "id": 1,
@@ -94,4 +174,3 @@
         "user": 2
     }]
 }
-
