@@ -2,7 +2,7 @@
 export interface User {
   firstName: string;
   lastName: string;
-  employeeId: string;
+  employeeId: number;
   qcProject: string;
   qcDomain: string;
   imgLink: string;

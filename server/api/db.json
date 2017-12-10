@@ -55,7 +55,7 @@
     "users": [{
         "firstName": "Yuri",
         "lastName": "Nator",
-        "employeeId": "15487563",
+        "employeeId": 15487563,
         "qcProject": "TMO dev",
         "qcDomain": "TMO",
         "imgLink": "",
@@ -67,7 +67,7 @@
     }, {
         "firstName": "Mayank",
         "lastName": "Kumar",
-        "employeeId": "11254885",
+        "employeeId": 11254885,
         "qcProject": "TMO dev",
         "qcDomain": "TMO",
         "imgLink": "",

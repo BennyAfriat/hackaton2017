@@ -11,7 +11,6 @@ import { Observable } from 'rxjs/Observable';
 export interface UserData {
   name: string;
   defects: Defect[];
-  widgets: Widget[];
 }
 
 @Injectable()
@@ -25,7 +24,7 @@ export class HomeService {
       return users.map(user => {
         return Object.assign({}, {
           name: user.firstName + " " + user.lastName,
-          defects: defects.filter(defect => defect.user === user.employeeId)
+          defects: defects.filter(defect => defect.assignedId === user.employeeId)
         });
       });
   });
