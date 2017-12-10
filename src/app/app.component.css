@@ -8,10 +8,17 @@
     position: relative;
 }
 
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
 .main-wrapper {
     position: relative;
-    margin: 0 auto;
-    max-width: 938px;
+    margin: 30px auto 0 auto;
+    width: 669px;
+    height: 600px;
 }
 
 .app-body {
@@ -27,6 +34,6 @@
     height: 531px;
     width: 127px;
     position: absolute;
-    top: 108px;
-    left: 432px;
+    top: 36px;
+    left: -110px;
 }
