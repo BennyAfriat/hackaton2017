@@ -8,14 +8,24 @@
     position: relative;
 }
 
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
 .main-wrapper {
+    position: relative;
+    margin: 30px auto 0 auto;
+    width: 669px;
+    height: 600px;
+}
+
+.app-body {
+    position: absolute;
     background-color: white;
     min-width: 738px;
     min-height: 608px;
-    position: absolute;
-    margin: 0 auto;
-    left: calc(50% - 284px);
-    top: 70px;
 }
 
 .actions-wrapper {
@@ -24,6 +34,6 @@
     height: 531px;
     width: 127px;
     position: absolute;
-    top: 108px;
-    left: 432px;
+    top: 36px;
+    left: -110px;
 }
