@@ -13,7 +13,7 @@ To get started run the commands below.
 
 ```bash
 $ git clone https://github.com/BennyAfriat/hackaton2017.git
-$ cd ng2-reactive-app
+$ cd hackaton2017
 $ npm install
 $ npm start
 ```
