@@ -22,7 +22,7 @@ export class UsersComponent implements OnInit {
   }
 
   resetUser() {
-    let emptyUser: User = {id: null, name: '', bio: ''};
+    let emptyUser: User = null;
     this.selectedUser = emptyUser;
   }
 
