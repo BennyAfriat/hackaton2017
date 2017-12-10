@@ -12,6 +12,7 @@ const comparator = 'id';
 export function defects (state: Defect[] = [], action: Action) {
   switch (action.type) {
     case ADD_DEFECTS:
+    console.log(action.payload);
       return action.payload;
 
     case CREATE_DEFECT:

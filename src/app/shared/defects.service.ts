@@ -10,7 +10,7 @@ import {
   CREATE_DEFECT,
   UPDATE_DEFECT,
   DELETE_DEFECT
-} from './defecs.reducer';
+} from './defects.reducer';
 
 const BASE_URL = 'http://localhost:3000/defects/';
 const HEADER = { headers: new Headers({ 'Content-Type': 'application/json' }) };

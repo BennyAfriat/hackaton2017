@@ -1,0 +1,7 @@
+<div class="mdl-grid items">
+  <div class="mdl-cell mdl-cell--6-col">
+    <defect-list [defects]="defects$ | async"
+                    (selected)="selectDefect($event)">
+    </defect-list>
+  </div>
+</div>
