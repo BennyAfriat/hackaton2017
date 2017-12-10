@@ -88,29 +88,78 @@
         "award": "Coldplay concert ticket",
         "assignedId": 15487563,
         "ETA": "22/12/2017"
-    }],
-
-
-    "items": [{
-        "id": 1,
-        "name": "Item 1",
-        "description": "This is description 1",
-        "user": 3
     }, {
-        "id": 2,
-        "name": "Item 2",
-        "description": "This is a description edited",
-        "user": 3
+        "id": 38020,
+        "severity": "3 - Medium",
+        "description": "URL sais inex instead of index",
+        "summery": "URL typo",
+        "award": "Barcelona match ticket",
+        "assignedId": 10101010,
+        "ETA": "12/12/2017"
     }, {
-        "id": 3,
-        "name": "Item 3",
-        "description": "This is a lovely item edited again!",
-        "user": 2
+        "id": 38022,
+        "severity": "2 - High",
+        "description": "Installments plan history table is empty",
+        "summery": "Installments plan history",
+        "award": "Free Netflix account for 30 days",
+        "assignedId": 15624875,
+        "ETA": "22/12/2017"
     }, {
-        "name": "yjygjhg",
-        "description": "jhgjhg",
-        "user": "1",
-        "id": 4
+        "id": 38049,
+        "severity": "4 - Low",
+        "description": "Billing info tile on shoulder over view is not showing data",
+        "summery": "New Shoulder overview",
+        "award": "Absence from town hall",
+        "assignedId": 15624875,
+        "ETA": "22/12/2017"
+    }, {
+        "id": 38051,
+        "severity": "1 - Critacal",
+        "description": "Widget service calls takes very long time",
+        "summery": "Performance on collection",
+        "award": "Meeting with Eli Gelman",
+        "assignedId": 15624875,
+        "ETA": "25/12/2017"
+    }, {
+        "id": 38054,
+        "severity": "4 - Low",
+        "description": "missing text box",
+        "summery": "Plan history",
+        "award": "Coffee",
+        "assignedId": 15624875,
+        "ETA": "12/12/2017"
+    }, {
+        "id": 38055,
+        "severity": "3 - Medium",
+        "description": "Widget is blank",
+        "summery": "Change Password Widget",
+        "award": "Meeting with Skazi",
+        "assignedId": 11321545,
+        "ETA": "25/12/2017"
+    }, {
+        "id": 38061,
+        "severity": "2 - High",
+        "description": "Missing scrolling on Y axis",
+        "summery": "OTP Verification scrolling",
+        "award": "Meeting with Skazi",
+        "assignedId": 11321545,
+        "ETA": "25/12/2017"
+    }, {
+        "id": 38063,
+        "severity": "4 - Low",
+        "description": "Red triangle instead of green",
+        "summery": "Account Info tile",
+        "award": "Meeting with Skazi",
+        "assignedId": 11321545,
+        "ETA": "22/12/2017"
+    }, {
+        "id": 38070,
+        "severity": "4 - Low",
+        "description": "Yellow triangle instead of green",
+        "summery": "Device and Services tile",
+        "award": "Dinner",
+        "assignedId": 11321545,
+        "ETA": "23/12/2017"
     }],
     "users": [{
         "firstName": "Yuri",
