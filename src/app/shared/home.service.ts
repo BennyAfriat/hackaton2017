@@ -2,11 +2,10 @@ import { Injectable } from '@angular/core';
 import { ItemsService } from './items.service';
 import { WidgetsService } from './widgets.service';
 import { UsersService } from './users.service';
-import { Item } from './item.model';
+import { Defect } from './defect.model';
 import { Widget } from './widget.model';
 import { User } from './user.model';
 import { Observable } from 'rxjs/Observable';
-import { Defect } from './defect.model';
 
 export interface UserData {
   name: string;
@@ -16,17 +15,16 @@ export interface UserData {
 
 @Injectable()
 export class HomeService {
-  defects$: Observable<Item[]> = this.itemsService.items$;
+  defects$: Observable<Defect[]> = this.defectsService.defects$;
   users$: Observable<User[]> = this.usersService.users$;
   widgets$: Observable<Widget[]> = this.widgetsService.widgets$;
   data$: Observable<UserData[]> = Observable.combineLatest(
     this.users$, this.defects$, this.widgets$,
-    (users,      defects,       widgets) => {
+    (users,      defects) => {
       return users.map(user => {
         return Object.assign({}, {
-          name: user.name,
-          defects: defects.filter(defect => defect.assignedId === user.id),
-          widgets: widgets.filter(widget => widget.user === user.id)
+          name: user.firstName + " " + user.lastName,
+          defects: defects.filter(defect => defect.user === user.employeeId)
         });
       });
   });

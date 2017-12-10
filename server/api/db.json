@@ -30,20 +30,17 @@
   ],
   "users": [
     {
-      "id": 1,
-      "name": "John Doe",
-      "bio": "Not to be confused with John Smith and stuff",
-      "avatar": "./avatar.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Sally Sue",
-      "bio": "Her first and last name both start with S haha!"
-    },
-    {
-      "name": "bart ",
-      "bio": "simpson",
-      "id": 4
+      "firstName": "Yuri",
+      "lastName": "Nator",
+      "employeeId": "15487563",
+      "qcProject": "TMO dev",
+      "qcDomain": "TMO",
+      "imgLink": "",
+      "rank": "42",
+      "credentials": {
+        "userName": "yurin",
+        "password": "Yuri12"
+      }
     }
   ],
   "widgets": [
