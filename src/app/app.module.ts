@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { Ng2RestAppRoutingModule } from './app-routing.module';
 import { StoreModule } from '@ngrx/store';
 
-import { ItemsService, items, UsersService, users, WidgetsService, widgets, HomeService } from './shared';
+import { ItemsService, items, UsersService, users, WidgetsService, widgets, HomeService, defects } from './shared';
 
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
@@ -15,6 +15,9 @@ import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 import { UsersComponent } from './users/users.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserDetailComponent } from './users/user-detail/user-detail.component';
+
+import { DefectsComponent } from './defect/defect.component';
+import { DefectListComponent } from './defect/defect-list/defects-list.component';
 
 import { WidgetsComponent } from './widgets/widgets.component';
 import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
@@ -36,14 +39,17 @@ import {DefectsService} from "./shared/defects.service";
     HomeComponent,
     WidgetsComponent,
     WidgetsListComponent,
-    WidgetDetailComponent
+    WidgetDetailComponent,
+    DefectsComponent,
+    DefectListComponent
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     Ng2RestAppRoutingModule,
-    StoreModule.provideStore({ items, users, widgets })
+    StoreModule.provideStore({ items, users, widgets, defects })
   ],
   providers: [ItemsService, UsersService, WidgetsService, HomeService, DefectsService],
   bootstrap: [AppComponent]

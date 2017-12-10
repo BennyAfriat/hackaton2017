@@ -26,7 +26,12 @@
       </div>
       <div class="column">
         <div class="col-header">Hottest Defects</div>
-        <div class="col-list"></div>
+        <div class="col-list">
+          <defect-list [defects]="defects$ | async"
+                    (selected)="selectDefect($event)">
+            
+          </defect-list>
+        </div>
       </div>
       <div class="column">
         <div class="col-header">Top Solvers</div>

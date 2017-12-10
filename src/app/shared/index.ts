@@ -9,3 +9,8 @@ export { Widget } from './widget.model';
 export * from './widgets.reducer';
 export { HomeService, UserData } from './home.service';
 
+export * from './defects.reducer';
+export { DefectsService } from './defects.service';
+export { Defect } from './defect.model';
+
+

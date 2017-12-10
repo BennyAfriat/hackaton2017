@@ -1,6 +1,7 @@
-import { Item, User } from './shared';
+import { Item, User, Defect } from './shared';
 
 export interface AppStore {
   items: Item[],
-  users: User[]
+  users: User[],
+  defects: Defect[]
 }

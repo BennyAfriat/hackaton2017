@@ -1,7 +1,5 @@
 .home-container {
 
-//margin: 20px;
-
 .item-card {
   margin-bottom: 10px;
 }
@@ -42,51 +40,74 @@
 
       background-image: url("../../assets/Combined_Shape.svg");
     }
-  }
-
-h5 {
-  margin: 0;
-}
-
-.mdl-card__supporting-text {
-  width: auto;
-}
-
-  .header{
-    height: 200px;
-  }
-  .content{
-    display: flex;
-    height: 318px;
-    margin: 20px;
-  }
-
-  .column{
-    flex-grow: 1;
-    .col-header{
-      height: 27px;
-      width: 100%;
-      color: #24C0D7;
-      font-size: 20px;
-      line-height: 27px;
+    .avatar {
+        border-radius: 1000px;
+        height: 100px;
+        width: 100px;
+        background: none;
+        border: none;
+        background-color: transparent;
+        margin-top: 40px;
+        margin-left: 40px;
     }
-  }
-
-  .footer{
-    height: 80px;
-    .foot-btn{
-      height: 43px;
-      width: 170px;
-      border-radius: 47px;
-      background: linear-gradient(180deg, #82DBEF 0%, #21CADF 100%);
-      float: right;
+    .user-name {
+        margin-top: 60px;
+        font-size: 30px;
     }
-    .lbl-btn{
-      color: white;
-      line-height: 40px;
-      padding-left: 26px;
+    .points-display {
+        margin-right: 20px;
+        .points {
+            height: 145px;
+            width: 95px;
+            span {
+                color: white;
+                font-size: 65px;
+                vertical-align: middle;
+            }
+            .my-points {
+                font-size: 15px;
+            }
+            background-image: url("../../assets/Combined_Shape.svg");
+        }
     }
-
-  }
-
+    h5 {
+        margin: 0;
+    }
+    .mdl-card__supporting-text {
+        width: auto;
+    }
+    .header {
+        height: 200px;
+    }
+    .content {
+        display: flex;
+        height: 318px;
+        margin: 20px;
+    }
+    .column {
+        flex-grow: 1;
+        .col-header {
+            height: 27px;
+            width: 100%;
+            color: #24C0D7;
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+    .footer {
+        height: 80px;
+        .foot-btn {
+            height: 43px;
+            width: 170px;
+            border-radius: 47px;
+            background: linear-gradient(180deg, #82DBEF 0%, #21CADF 100%);
+            float: right;
+            margin: -36px 52px 0 0;
+        }
+        .lbl-btn {
+            color: white;
+            line-height: 40px;
+            padding-left: 26px;
+        }
+    }
 }
