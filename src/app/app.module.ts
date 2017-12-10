@@ -21,6 +21,7 @@ import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.compon
 import { WidgetDetailComponent } from './widgets/widget-detail/widget-detail.component';
 
 import { HomeComponent } from './home/home.component';
+import {DefectsService} from "./shared/defects.service";
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { HomeComponent } from './home/home.component';
     Ng2RestAppRoutingModule,
     StoreModule.provideStore({ items, users, widgets })
   ],
-  providers: [ItemsService, UsersService, WidgetsService, HomeService],
+  providers: [ItemsService, UsersService, WidgetsService, HomeService, DefectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,7 @@
+.home-container {
+
+margin: 20px;
+
 .item-card {
   margin-bottom: 10px;
 }
@@ -9,6 +13,7 @@
   background: none;
   border: none;
   background-color: transparent;
+  margin: 20px;
 }
 
 h5 {
@@ -17,4 +22,22 @@ h5 {
 
 .mdl-card__supporting-text {
   width: auto;
+}
+
+  .header{
+    height: 170px;
+  }
+  .content{
+    display: flex;
+    height: 318px;
+  }
+
+  .column{
+    flex-grow: 1;
+  }
+
+  .footer{
+    height: 80px;
+  }
+
 }
