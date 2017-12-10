@@ -1,0 +1,27 @@
+.item-card {
+    margin: 10px 0 10px 0;
+}
+
+.users-list {}
+
+.users-list > div {
+    display: inline-block;
+}
+
+.users-list img {
+    margin: -25px 10px 0 10px;
+}
+
+.users-list p {
+    margin-bottom: 0;
+    color: #414045;
+}
+
+.users-list p:first-child {
+    font-weight: bold;
+    margin-bottom: -7px;
+}
+
+.users-list p:nth-child(2) {
+    font-size: 11px;
+}

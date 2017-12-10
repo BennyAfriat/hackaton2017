@@ -23,7 +23,12 @@
       </div>
       <div class="column">
         <div class="col-header">Top Solvers</div>
-        <div class="col-list"></div>
+        <div class="col-list">
+          <app-users-list [users]="users$ | async"
+                    (selected)="selectUser($event)"
+                    (deleted)="deleteUser($event)">
+          </app-users-list>
+        </div>
       </div>
     </div>
     <div class="footer">
