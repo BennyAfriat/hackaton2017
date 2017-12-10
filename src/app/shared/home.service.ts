@@ -6,25 +6,26 @@ import { Item } from './item.model';
 import { Widget } from './widget.model';
 import { User } from './user.model';
 import { Observable } from 'rxjs/Observable';
+import { Defect } from './defect.model';
 
 export interface UserData {
   name: string;
-  items: Item[];
+  defects: Defect[];
   widgets: Widget[];
 }
 
 @Injectable()
 export class HomeService {
-  items$: Observable<Item[]> = this.itemsService.items$;
+  defects$: Observable<Item[]> = this.itemsService.items$;
   users$: Observable<User[]> = this.usersService.users$;
   widgets$: Observable<Widget[]> = this.widgetsService.widgets$;
   data$: Observable<UserData[]> = Observable.combineLatest(
-    this.users$, this.items$, this.widgets$,
-    (users,      items,       widgets) => {
+    this.users$, this.defects$, this.widgets$,
+    (users,      defects,       widgets) => {
       return users.map(user => {
         return Object.assign({}, {
           name: user.name,
-          items: items.filter(item => item.user === user.id),
+          defects: defects.filter(defect => defect.assignedId === user.id),
           widgets: widgets.filter(widget => widget.user === user.id)
         });
       });

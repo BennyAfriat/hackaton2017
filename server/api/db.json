@@ -1,45 +1,49 @@
 {
-  "items": [
-    {
-      "id": 1,
-      "name": "Item 1",
-      "description": "This is description 1",
-      "user": 3
-    },
+  "defects": [
     {
       "id": 2,
-      "name": "Item 2",
+      "severity": "critical",
       "description": "This is a description edited",
-      "user": 3
+      "award": "Cofee",
+      "assignedId": 1,
+      "solvingId": 1,
+      "ETA": "01/01/2018"
     },
     {
       "id": 3,
-      "name": "Item 3",
-      "description": "This is a lovely item edited again!",
-      "user": 2
+      "severity": "high",
+      "description": "This is a description edited",
+      "award": "Lunch",
+      "assignedId": 1,
+      "solvingId": 2,
+      "ETA": "01/01/2018"
     },
     {
       "id": 4,
-      "name": "Item 4",
-      "description": "Another lovely item!",
-      "user": 1
+      "severity": "critical",
+      "description": "This is a description edited",
+      "award": "Massage",
+      "assignedId": 1,
+      "solvingId": 3,
+      "ETA": "01/01/2018"
     }
   ],
   "users": [
     {
       "id": 1,
       "name": "John Doe",
-      "bio": "Not to be confused with John Smith and stuff"
-    },
-    {
-      "id": 2,
-      "name": "Jane Doe",
-      "bio": "Don't call her plain Jane whatever you do"
+      "bio": "Not to be confused with John Smith and stuff",
+      "avatar": "./avatar.jpg"
     },
     {
       "id": 3,
       "name": "Sally Sue",
       "bio": "Her first and last name both start with S haha!"
+    },
+    {
+      "name": "bart ",
+      "bio": "simpson",
+      "id": 4
     }
   ],
   "widgets": [
