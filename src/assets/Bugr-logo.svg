@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="89px" height="60px" viewBox="0 0 89 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Bugr-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="Alba" font-size="46" font-weight="normal" fill="#FFFFFF">
+            <tspan x="0" y="61">B</tspan>
+        </text>
+        <filter x="-31.8%" y="-5.8%" width="163.6%" height="116.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.19568048 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-3" font-family="AlbaSuper, Alba Super" font-size="28" font-weight="700" fill="#FFFFFF">
+            <tspan x="24" y="60">uger</tspan>
+        </text>
+        <filter x="-12.1%" y="-9.4%" width="124.1%" height="126.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="User_page" transform="translate(-17.000000, -23.000000)" fill="#FFFFFF">
+            <g id="Bugr-logo" transform="translate(19.000000, -3.000000)">
+                <g id="B">
+                    <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                    <use xlink:href="#text-1"></use>
+                </g>
+                <g id="uger">
+                    <use filter="url(#filter-4)" xlink:href="#text-3"></use>
+                    <use xlink:href="#text-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
