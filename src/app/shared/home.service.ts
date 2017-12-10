@@ -21,7 +21,7 @@ export class HomeService {
   widgets$: Observable<Widget[]> = this.widgetsService.widgets$;
   data$: Observable<UserData[]> = Observable.combineLatest(
     this.users$, this.defects$, this.widgets$,
-    (users,      defects) => {
+    (users,defects) => {
       return users.map(user => {
         return Object.assign({}, {
           name: user.firstName + " " + user.lastName,

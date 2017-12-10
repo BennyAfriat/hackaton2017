@@ -15,7 +15,6 @@ export class HomeComponent {
   loggedUser: Observable<User> = this.homeService.loggedUser$;
 
   constructor(private homeService: HomeService) {
-
-    console.log(this.loggedUser);
+    console.log(this.userData);
   }
 }
