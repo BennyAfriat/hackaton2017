@@ -9,13 +9,16 @@
 }
 
 .main-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 938px;
+}
+
+.app-body {
+    position: absolute;
     background-color: white;
     min-width: 738px;
     min-height: 608px;
-    position: absolute;
-    margin: 0 auto;
-    left: calc(50% - 284px);
-    top: 70px;
 }
 
 .actions-wrapper {
