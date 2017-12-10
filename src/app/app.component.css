@@ -27,21 +27,7 @@
     min-width: 738px;
     min-height: 608px;
 }
-.header{
-  height: 170px;
-}
-.content{
-  display: flex;
-  height: 358px;
-}
 
-.column{
-  flex-grow: 1;
-}
-
-.footer{
-  height: 80px;
-}
 
 .actions-wrapper {
     background-color: #49484D;
