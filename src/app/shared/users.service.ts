@@ -25,6 +25,7 @@ export class UsersService {
     private store: Store<AppStore>
   ) {}
 
+
   loadUsers() {
     return this.http.get(BASE_URL)
       .map(res => res.json())
