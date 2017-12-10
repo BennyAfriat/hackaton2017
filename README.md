@@ -12,7 +12,7 @@ There are two main parts to this application. The first is the REST API, for whi
 To get started run the commands below.
 
 ```bash
-$ git clone https://github.com/onehungrymind/ng2-reactive-app.git
+$ git clone https://github.com/BennyAfriat/hackaton2017.git
 $ cd ng2-reactive-app
 $ npm install
 $ npm start
