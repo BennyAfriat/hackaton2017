@@ -32,6 +32,12 @@ export class UsersService {
       .map(payload => ({ type: ADD_USERS, payload }))
       .subscribe(action => this.store.dispatch(action));
   }
+  loadTopUsers(){
+     return this.http.get(BASE_URL)
+      .map(res => res.json().splice(0,5))
+      .map(payload => ({ type: ADD_USERS, payload }))
+      .subscribe(action => this.store.dispatch(action));
+  }
 
   saveUser(user: User) {
     return (user.employeeId) ? this.updateUser(user) : this.createUser(user);

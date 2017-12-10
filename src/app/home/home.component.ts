@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
    this.users$ = this.usersService.users$;
-    this.usersService.loadUsers();
+    //this.usersService.loadUsers();
+    this.usersService.loadTopUsers();
     console.log(this.users$);
   }
 }
