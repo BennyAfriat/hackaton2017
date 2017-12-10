@@ -1,29 +1,93 @@
 {
 
     "defects": [{
-        "id": 2,
-        "severity": "critical",
-        "description": "This is a description edited",
-        "award": "Cofee",
-        "assignedId": 1,
-        "solvingId": 1,
-        "ETA": "01/01/2018"
+        "id": 38151,
+        "severity": "1 - Critical",
+        "description": "Memo missing details when veryfiing user with account number and activation date",
+        "summery": "Memo missing details",
+        "award": "Coffee",
+        "assignedId": 15487563,
+        "ETA": "15/12/2017"
     }, {
-        "id": 3,
-        "severity": "high",
-        "description": "This is a description edited",
+        "id": 37850,
+        "severity": "2 - High",
+        "description": "OTP Verification Window Opened Blank",
+        "summery": "OTP Verification US006",
         "award": "Lunch",
-        "assignedId": 1,
-        "solvingId": 2,
-        "ETA": "01/01/2018"
+        "assignedId": 11254654,
+        "ETA": "14/12/2017"
     }, {
-        "id": 4,
-        "severity": "critical",
-        "description": "This is a description edited",
+        "id": 37920,
+        "severity": "2 - High",
+        "description": "When add Authorized Users the shoulder is not updated immediately",
+        "summery": "Authorized Users Adding issue",
         "award": "Massage",
-        "assignedId": 1,
-        "solvingId": 3,
-        "ETA": "01/01/2018"
+        "assignedId": 11254654,
+        "ETA": "13/12/2017"
+    }, {
+        "id": 37932,
+        "severity": "3 - Medium",
+        "description": "There is no error message when entering wrong number for Toke code and Validation code, in the Dealer Validation section",
+        "summery": "Account Verification Dealer validation",
+        "award": "Dinner",
+        "assignedId": 11254654,
+        "ETA": "16/12/2017"
+    }, {
+        "id": 37946,
+        "severity": "4 - Low",
+        "description": "Information that should be masked when the ban is unauthorized is available in the screen Daily balance for ban",
+        "summery": "US006 Masking issues",
+        "award": "Sandwich",
+        "assignedId": 11254654,
+        "ETA": "18/12/2017"
+    }, {
+        "id": 37952,
+        "severity": "2 - High",
+        "description": "Misplaced Dot of Radio Button in Account Verification Screen",
+        "summery": "Account verification screen issues",
+        "award": "breakfast",
+        "assignedId": 11111111,
+        "ETA": "21/12/2017"
+    }, {
+        "id": 37956,
+        "severity": "3 - Medium",
+        "description": "The text box for the Caller name needs to be bigger",
+        "summery": "Account verification screen issues",
+        "award": "Tea",
+        "assignedId": 11111111,
+        "ETA": "21/12/2017"
+    }, {
+        "id": 38001,
+        "severity": "1 - Critical",
+        "description": "SQL Injection opportunity",
+        "summery": "Security issues",
+        "award": "weekend vacation all included",
+        "assignedId": 11254654,
+        "ETA": "22/12/2017"
+    }, {
+        "id": 38008,
+        "severity": "3 - Medium",
+        "description": "Out of date screen",
+        "summery": "Promotion 360 issues",
+        "award": "lunch",
+        "assignedId": 11254654,
+        "ETA": "22/12/2017"
+    }, {
+        "id": 38015,
+        "severity": "2 - High",
+        "description": "Masking is not working",
+        "summery": "Masking issues",
+        "award": "Coldplay concert ticket",
+        "assignedId": 11254654,
+        "ETA": "22/12/2017"
+    }, {
+        "id": 38018,
+        "severity": "3 - Medium",
+        "description": "Masking is not working",
+        "summery": "Masking issues",
+        "award": "Coldplay concert ticket",
+        "assignedId": 15487563,
+        "ETA": "22/12/2017"
     }],
 
 
