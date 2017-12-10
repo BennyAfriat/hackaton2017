@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ItemsService } from './items.service';
+import { DefectsService } from './defects.service';
 import { WidgetsService } from './widgets.service';
 import { UsersService } from './users.service';
 import { Defect } from './defect.model';
@@ -32,10 +33,12 @@ export class HomeService {
   constructor(
     private usersService: UsersService,
     private itemsService: ItemsService,
+    private defectsService: DefectsService,
     private widgetsService: WidgetsService
   ) {
     this.usersService.loadUsers();
     this.itemsService.loadItems();
+    this.defectsService.loadDefects();
     this.widgetsService.loadWidgets();
   }
 
