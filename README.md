@@ -1,4 +1,4 @@
-# ng2-reactive-app
+# Buger Web App
 
 A reactive, REST-ful master-detail application built using Angular 2 and angular-cli.
 
