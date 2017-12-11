@@ -16,8 +16,8 @@ import { UsersComponent } from './users/users.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserDetailComponent } from './users/user-detail/user-detail.component';
 
-import { DefectsComponent } from './defect/defect.component';
-import { DefectListComponent } from './defect/defect-list/defects-list.component';
+import { DefectsComponent } from './defects/defects.component';
+import { DefectListComponent } from './defects/defects-list/defects-list.component';
 
 import { WidgetsComponent } from './widgets/widgets.component';
 import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
