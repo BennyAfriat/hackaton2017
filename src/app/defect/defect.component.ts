@@ -17,8 +17,8 @@ export class DefectsComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.defects$ = this.defectsService.defects$;
-    this.defectsService.loadDefects();
+    //this.defects$ = this.defectsService.defectsByPopularity$;
+   //this.defectsService.loadDefects();
   }
 
   resetDefect() {

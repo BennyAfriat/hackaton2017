@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'Buger';
 
   links = {
-    items: ['/items'],
+    defects: ['/defects'],
     widgets: ['/widgets'],
     users: ['/users'],
     home: ['/home']

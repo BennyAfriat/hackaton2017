@@ -1,0 +1,13 @@
+.defect-list-by-id {
+    color: #414045;
+}
+
+.defect-list-by-id p:first-child {
+    font-weight: bold;
+    margin: 0 0 -5px 0;
+    font-size: 14px;
+}
+
+.defect-list-by-id p:nth-child(2) {
+    color: #9c9c9c;
+}
