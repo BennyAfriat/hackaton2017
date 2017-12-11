@@ -1,0 +1,20 @@
+.item-card {
+  margin-bottom: 10px;
+}
+
+.avatar {
+  border-radius: 1000px;
+  height: 100px;
+  width: 100px;
+  background: none;
+  border: none;
+  background-color: transparent;
+}
+
+h5 {
+  margin: 0;
+}
+
+.mdl-card__supporting-text {
+  width: auto;
+}

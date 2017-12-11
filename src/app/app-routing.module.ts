@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DefectsComponent } from './defect/defect.component';
+import { DefectsComponent } from './defects/defects.component';
 import { WidgetsComponent } from './widgets/widgets.component';
 import { UsersComponent } from "./users/users.component";
 import { HomeComponent } from "./home/home.component";

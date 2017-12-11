@@ -23,19 +23,19 @@
       <div class="column">
         <div class="col-header">My Last Defects</div>
         <div class="col-list">
-          <defect-list [defects]="defectsByUserId$ | async"
+          <defects-list [defects]="defectsByUserId$ | async"
                     (selected)="selectDefect($event)">
             
-          </defect-list>
+          </defects-list>
         </div>
       </div>
       <div class="column">
         <div class="col-header">Hottest Defects</div>
         <div class="col-list">
-          <defect-list [defects]="defectsByPopularity$ | async"
+          <defects-list [defects]="defectsByPopularity$ | async"
                     (selected)="selectDefect($event)">
             
-          </defect-list>
+          </defects-list>
         </div>
       </div>
       <div class="column">

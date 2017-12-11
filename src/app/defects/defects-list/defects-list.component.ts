@@ -2,9 +2,9 @@ import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from 
 import { Defect } from '../../shared';
 
 @Component({
-  selector: 'defect-list',
+  selector: 'defects-list',
   templateUrl: './defects-list.component.html',
-  styleUrls: ['./defect-list.component.scss'],
+  styleUrls: ['./defects-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DefectListComponent {
