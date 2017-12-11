@@ -11,7 +11,8 @@ import 'rxjs/add/observable/combineLatest';
 })
 export class HomeComponent implements OnInit {
    users$: Observable<User[]>;
-   defects$:  Observable<Defect[]>;
+   defectsByUserId$:  Observable<Defect[]>;
+   defectsByPopularity$:  Observable<Defect[]>;
   
   constructor(private usersService: UsersService, private defectsService: DefectsService) {
     // console.log(this.userData);
@@ -19,9 +20,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
    this.users$ = this.usersService.users$;
-   this.defects$ = this.defectsService.defects$;
+  this.defectsByUserId$ = this.defectsService.defectsByUserId$;
+   this.defectsByPopularity$ = this.defectsService.defectsByPopularity$;
     //this.usersService.loadUsers();
     this.usersService.loadTopUsers();
-    this.defectsService.loadDefects();
+    
+    this.defectsService.loadDefectsByUserID(15487563);
+    //this.defectsService.loadHottestDefects();
+   // this.defectsService.loadDefects();
   }
 }

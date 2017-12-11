@@ -16,7 +16,7 @@ export interface UserData {
 @Injectable()
 export class HomeService {
   loggedUser$: Observable<User> = this.usersService.user$;
-  defects$: Observable<Defect[]> = this.defectsService.defects$;
+  defects$: Observable<Defect[]> = this.defectsService.defectsByPopularity$;
   users$: Observable<User[]> = this.usersService.users$;
   widgets$: Observable<Widget[]> = this.widgetsService.widgets$;
   data$: Observable<UserData[]> = Observable.combineLatest(

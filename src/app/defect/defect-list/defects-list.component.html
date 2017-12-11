@@ -1,6 +1,6 @@
-<div *ngFor="let defect of defects" (click)="selected.emit(defect)"
-     class="">
-  <div class="">
-    <h2 class="mdl-card__title-text">{{defect.summery}}</h2>
+<div *ngFor="let defect of defects" (click)="selected.emit(defect)" class="">
+  <div class="defect-list-by-id">
+  	<p>{{defect.id}}</p>
+    <p class="">{{defect.summery}}</p>
   </div>
 </div>

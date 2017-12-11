@@ -9,7 +9,8 @@ import {
   ADD_DEFECTS,
   CREATE_DEFECT,
   UPDATE_DEFECT,
-  DELETE_DEFECT
+  DELETE_DEFECT,
+  ADD_HOTTESET_DEFECTS
 } from './defects.reducer';
 
 const BASE_URL = 'http://localhost:3000/defects/';
@@ -17,7 +18,8 @@ const HEADER = { headers: new Headers({ 'Content-Type': 'application/json' }) };
 
 @Injectable()
 export class DefectsService {
-  defects$: Observable<Defect[]> = this.store.select('defects');
+  defectsByUserId$: Observable<Defect[]> = this.store.select('defects');
+  defectsByPopularity$: Observable<Defect[]> = this.store.select('defects2');
 
   constructor(
     private http: Http,
@@ -25,10 +27,25 @@ export class DefectsService {
   ) {}
 
   loadDefects() {
-    return this.http.get(BASE_URL)
+    return this.http.get(`${BASE_URL}`)
       .map(res => res.json())
       .map(payload => ({ type: ADD_DEFECTS, payload }))
       .subscribe(action => this.store.dispatch(action));
+  }
+
+  loadHottestDefects(){
+   return this.http.get(`${BASE_URL}`)
+      .map(res => res.json().splice(0,5))
+      .map(payload => ({ type: ADD_HOTTESET_DEFECTS, payload }))
+      .subscribe(action => this.store.dispatch(action));
+  }
+
+
+  loadDefectsByUserID(userID : number){
+    return this.http.get(`${BASE_URL}?assignedId=${userID}`)
+    .map(res => res.json())
+    .map(payload => ({ type: ADD_DEFECTS, payload }))
+    .subscribe(action => this.store.dispatch(action));
   }
 
   saveDefect(defect: Defect) {

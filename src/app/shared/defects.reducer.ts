@@ -3,6 +3,7 @@ import { Defect } from './defect.model';
 import { ActionReducer, Action } from '@ngrx/store';
 
 export const ADD_DEFECTS = 'ADD_DEFECTS';
+export const ADD_HOTTESET_DEFECTS = 'ADD_HOTTESET_DEFECTS';
 export const CREATE_DEFECT = 'CREATE_DEFECT';
 export const UPDATE_DEFECT = 'UPDATE_DEFECT';
 export const DELETE_DEFECT = 'DELETE_DEFECT';
@@ -11,8 +12,9 @@ const comparator = 'id';
 
 export function defects (state: Defect[] = [], action: Action) {
   switch (action.type) {
+    case ADD_HOTTESET_DEFECTS:
+      return action.payload
     case ADD_DEFECTS:
-    console.log(action.payload);
       return action.payload;
 
     case CREATE_DEFECT:
